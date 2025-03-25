@@ -28,6 +28,10 @@
 					"name": "sink1SQLSummary"
 				},
 				{
+					"dataset": {
+						"referenceName": "External_Table_Gen2",
+						"type": "DatasetReference"
+					},
 					"name": "sink2Gen2storage"
 				}
 			],
@@ -154,10 +158,17 @@
 				"     )) ~> sink1SQLSummary",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     preCommands: [],",
-				"     postCommands: []) ~> sink2Gen2storage"
+				"     saveOrder: 1,",
+				"     mapColumn(",
+				"          AgencyName,",
+				"          FiscalYear,",
+				"          TotalPaid",
+				"     )) ~> sink2Gen2storage"
 			]
 		}
 	}
