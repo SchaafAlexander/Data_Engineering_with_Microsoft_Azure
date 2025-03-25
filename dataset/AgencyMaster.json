@@ -19,6 +19,15 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "AgencyID",
+				"type": "String"
+			},
+			{
+				"name": "AgencyName",
+				"type": "String"
+			}
+		]
 	}
 }
