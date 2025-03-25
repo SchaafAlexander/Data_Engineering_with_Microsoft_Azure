@@ -1,0 +1,9 @@
+{
+	"name": "adf-alex-schaaf",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fc395ab0-c42f-468a-9e6f-31686996117f",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}
