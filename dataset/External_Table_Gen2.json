@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "NYC_Payroll_Summary.csv",
 				"folderPath": "dirstaging",
 				"fileSystem": "adlsnycpayrollalexschaaf"
 			},
